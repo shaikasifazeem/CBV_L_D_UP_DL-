@@ -1,0 +1,23 @@
+{% extends 'app/dummy.html' %}
+
+
+{% block title %}
+    <title>HIS IS School_list  PAGE</title>
+{% endblock %}
+
+
+{% block body_block %}
+<center style="background-color: #00ff00;">
+    <h1> list of Schools </h1>
+
+    
+    {% for i in schools %}
+
+
+   <h1>{{i.name}}</h1> 
+
+    {% endfor %}
+
+    
+</center>
+{% endblock %}
